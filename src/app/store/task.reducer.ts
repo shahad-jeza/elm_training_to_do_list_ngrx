@@ -30,5 +30,5 @@ export const taskReducer = createReducer(
     tasks: state.tasks.map((task) =>
       task.id === id ? { ...task, completed: !task.completed } : task
     ),
-  }))
+  })),
 );
